@@ -64,13 +64,3 @@ CCTV第一剧场,http://111.225.114.93:808/tsfile/live/1033_1.m3u8?key=txiptv&pl
 CCTV风云剧场,http://111.225.114.93:808/tsfile/live/1034_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV怀旧剧场,http://111.225.114.93:808/tsfile/live/1035_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV风云音乐,http://111.225.114.93:808/tsfile/live/1036_1.m3u8?key=txiptv&playlive=1&authid=0
-CCTV风云足球,http://111.225.114.93:808/tsfile/live/1037_1.m3u8?key=txiptv&playlive=1&authid=0
-北京纪实高清,http://111.225.114.93:808/tsfile/live/1038_1.m3u8?key=txiptv&playlive=1&authid=0
-高碑店-1,http://111.225.114.93:808/tsfile/live/1039_1.m3u8?key=txiptv&playlive=1&authid=0
-邯郸新闻综合,http://111.225.114.93:808/tsfile/live/1040_1.m3u8?key=txiptv&playlive=1&authid=0
-衡水综合,http://111.225.114.93:808/tsfile/live/1041_1.m3u8?key=txiptv&playlive=1&authid=0
-快乐垂钓,http://111.225.114.93:808/tsfile/live/1042_1.m3u8?key=txiptv&playlive=1&authid=0
-廊坊新闻,http://111.225.114.93:808/tsfile/live/1043_1.m3u8?key=txiptv&playlive=1&authid=0
-秦皇岛-1,http://111.225.114.93:808/tsfile/live/1044_1.m3u8?key=txiptv&playlive=1&authid=0
-唐山新闻综合,http://111.225.114.93:808/tsfile/live/1045_1.m3u8?key=txiptv&playlive=1&authid=0
-张家口-1,http://111.225.114.93:808/tsfile/live/1046_1.m3u8?key=txiptv&playlive=1&authid=0
