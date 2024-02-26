@@ -26,5 +26,9 @@
   {
     "title": "江苏卫视",
     "chapterPath": "https://60.205.114.16/live/jsws.m3u8?user=APTV66&line=2"
+  },
+   {
+    "title": "CCTV-11",
+    "chapterPath": "https://live.goodiptv.club/api/bestv.php?id=cctv11hd8m/8000000"
   }
 ]
