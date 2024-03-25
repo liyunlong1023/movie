@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #spinner {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            border-radius: 50%;
+            position: relative;
+            animation: spin 4s infinite linear;
+        }
+
+        @@keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #centerDiv {
+            margin-top: 3%;
+            width: 99%;
+            height: 80%;
+        }
+
+        #bottomDiv {
+            position: fixed;
+            bottom: 1%;
+            width: 99%;
+            height: 12%;
+            background: #f1f3f4;
+            display: flex;
+            align-items: center; /* 垂直居中 */
+            border-radius: 15px;
+        }
+
+        #playLogo {
+            width: 100px; /* 设置固定宽度 */
+        }
+
+        #playAudio {
+            flex-grow: 1; /* 占据剩余空间 */
+        }
+
+            #playAudio audio {
+                width: 97%; /* 宽度充满父容器 */
+                height: 50px; /* 调整高度，这里设置为50px，你可以根据需要进行调整 */
+                margin-left: 1%;
+            }
+
+        .searchBtn {
+            width: 70px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 15px;
+            background: #f1f3f4;
+            margin-left: 10px;
+        }
+
+            .searchBtn:hover {
+                cursor: pointer; /* 将光标设置为小手 */
+            }
+
+        table {
+            width: 100%; /* 让表格宽度铺满父元素 */
+            table-layout: fixed; /* 固定表格布局 */
+        }
+
+            table tr {
+                border-bottom: 1px solid #F1F3F4; /* 为每一行添加底部边框 */
+                text-align: center;
+            }
+
+                table tr td:last-child, table tr th:last-child {
+                    border-right: none; /* 可选：移除每一行最后一个单元格的右边框 */
+                }
+
+            /* 第一列的宽度为20% */
+            table th:nth-child(1),
+            table td:nth-child(1) {
+                width: 5%;
+            }
+
+            /* 第二列的宽度为20% */
+            table th:nth-child(2),
+            table td:nth-child(2) {
+                width: 65%;
+            }
+
+            /* 第三列的宽度为30% */
+            table th:nth-child(3),
+            table td:nth-child(3) {
+                width: 10%;
+            }
+
+            /* 第四列的宽度为20% */
+            table th:nth-child(4),
+            table td:nth-child(4) {
+                width: 10%;
+            }
+
+            /* 第五列的宽度为10% */
+            table th:nth-child(5),
+            table td:nth-child(5) {
+                width: 10%;
+            }
+
+    </style>
+    <script>
+        var page = 1;
+        var pagesize = 10;
+        //歌曲质量
+        var br = 1;
+        //搜索
+        function search() {
+            page = 1;
+            pagesize = 10;
+            // 获取具有特定 ID 的输入框元素
+            var inputElement = document.getElementById("keyWord");
+            // 获取输入框的值
+            var keywordValue = inputElement.value;
+            GetMusicList(keywordValue);
+        }
+
+        //获取数据列表
+        function GetMusicList(keyWord) {
+            // 创建一个新的 XMLHttpRequest 对象
+            var xhr = new XMLHttpRequest();
+
+            // 设置请求的方法和 URL
+            xhr.open('GET', 'https://api.xingzhige.com/API/Kugou_GN_new/?page=' + page + '&pagesize=' + pagesize + '&br=' + br + '&name=' + keyWord, true);
+
+            // 监听 XMLHttpRequest 的加载事件
+            xhr.onload = function () {
+                // 检查请求是否成功
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    // 解析 JSON 响应
+                    var responseData = JSON.parse(xhr.responseText);
+                    // 处理解析后的数据
+                    //console.log(responseData); // 打印解析后的数据
+                    //#region 暂时舍弃
+                    // // 创建表格元素
+                    // var table = document.createElement('table');
+                    // // 移除表格的默认样式
+                    // table.style.border = '0';
+                    // 遍历 responseData.data 数组
+                    // responseData.data.forEach(function (item) {
+                    //     // 创建表格行
+                    //     var row = table.insertRow();
+
+                    //     // 创建表格单元格并填充序号
+                    //     var cell0 = row.insertCell();
+                    //     cell0.textContent = index++;
+
+                    //     // 创建表格单元格并填充数据
+                    //     var cell1 = row.insertCell();
+                    //     cell1.textContent = item.songname;
+
+                    //     var cell2 = row.insertCell();
+                    //     cell2.textContent = item.name;
+
+                    //     // 创建图片元素并设置图片来源
+                    //     var img = document.createElement('img');
+                    //     img.src = item.cover;
+
+                    //     // 添加样式
+                    //     img.style.width = '50px'; // 设置宽度为50像素
+                    //     img.style.height = '50px'; // 设置高度为50像素
+                    //     img.style.borderRadius = '5px'; // 设置圆角为5像素
+
+                    //     // 将图片添加到页面中
+                    //     var cell3 = row.insertCell();
+                    //     cell3.appendChild(img);
+
+
+                    //     // 创建播放按钮元素
+                    //     var playButton = document.createElement('button');
+                    //     playButton.textContent = '播放';
+
+                    //     // 为播放按钮添加点击事件处理程序
+                    //     playButton.addEventListener('click', function () {
+                    //         var image = document.getElementById('spinner');
+                    //         image.src = item.cover;
+                    //         // 在这里添加播放音乐的代码
+                    //         // console.log('播放音乐:', item.FileHash);
+                    //         // 获取当前行的行数,表格的索引从0开始计数
+                    //         var rowIndex = row.rowIndex + 1;
+                    //         detailPalyMusic(rowIndex, keyWord);
+                    //     });
+
+                    //     // 创建表格单元格并插入播放按钮元素
+                    //     var cell4 = row.insertCell();
+                    //     cell4.appendChild(playButton);
+                    // });
+                    // 将表格添加到页面中
+                    // document.getElementById("centerDiv").appendChild(table);
+                    // #endregion
+
+                    // 创建无序列表元素
+                    var ul = document.createElement('ul');
+                    // 设置 ul 的样式
+                    ul.style.padding = '0';
+                    // 设置无序列表样式
+                    ul.style.listStyleType = 'none'; // 移除默认的列表标志
+                    // 初始化计数器
+                    var index = 1;
+                    // 遍历 responseData.data 数组
+                    responseData.data.forEach(function (item, index) {
+                        // 创建 li 元素作为列表项
+                        var li = document.createElement('li');
+                        // 设置 li 的样式
+                        li.style.display = 'flex';
+                        li.style.alignItems = 'center';
+                        li.style.borderBottom = '1px solid #f1f3f4';
+                        li.style.padding = '10px 0';
+
+                        // 创建 span 元素用于包装序号，实现垂直居中
+                        var spanIndex = document.createElement('span');
+                        spanIndex.textContent = index + 1; // 注意修改这里
+                        spanIndex.style.flex = '0 0 50px'; // 设置固定宽度为50像素
+                        spanIndex.style.textAlign = 'center'; // 文本居中
+                        spanIndex.style.display = 'flex';
+                        spanIndex.style.alignItems = 'center'; // 垂直居中
+
+                        // 创建 span 元素用于包装歌曲名，实现垂直居中
+                        var spanSongname = document.createElement('span');
+                        spanSongname.textContent = item.songname;
+                        spanSongname.style.flex = '2'; // 设置灵活宽度
+                        spanSongname.style.padding = '0 10px'; // 添加左右内边距
+                        spanSongname.style.display = 'flex';
+                        spanSongname.style.alignItems = 'center'; // 垂直居中
+
+                        // 创建 span 元素用于包装歌手名，实现垂直居中
+                        var spanName = document.createElement('span');
+                        spanName.textContent = item.name;
+                        spanName.style.flex = '1'; // 设置灵活宽度
+                        spanName.style.padding = '0 10px'; // 添加左右内边距
+                        spanName.style.display = 'flex';
+                        spanName.style.alignItems = 'center'; // 垂直居中
+
+                        // 创建 span 元素用于包装图片，实现垂直居中
+                        var spanImg = document.createElement('span');
+                        spanImg.style.flex = '1'; // 设置灵活宽度
+                        spanImg.style.padding = '0 10px'; // 添加左右内边距
+                        spanImg.style.display = 'flex';
+                        spanImg.style.alignItems = 'center'; // 垂直居中
+
+                        // 创建图片元素并设置图片来源
+                        var img = document.createElement('img');
+                        img.src = item.cover;
+                        img.style.width = '50px'; // 设置宽度为50像素
+                        img.style.height = '50px'; // 设置高度为50像素
+                        img.style.borderRadius = '5px'; // 设置圆角为5像素
+
+                        spanImg.appendChild(img);
+
+                        // 创建播放按钮元素
+                        var playButton = document.createElement('button');
+                        playButton.textContent = '播放';
+
+                        // 为播放按钮添加点击事件处理程序
+                        playButton.addEventListener('click', function () {
+                            var image = document.getElementById('spinner');
+                            image.src = item.cover;
+                            var rowIndex = index + 1; // 修改这里
+                            // console.log(rowIndex);
+                            detailPalyMusic(rowIndex, keyWord);
+                        });
+
+                        // 将各个元素添加到列表项中
+                        li.appendChild(spanIndex);
+                        li.appendChild(spanSongname);
+                        li.appendChild(spanName);
+                        li.appendChild(spanImg);
+                        li.appendChild(playButton);
+
+                        // 将列表项添加到 ul 中
+                        ul.appendChild(li);
+                    });
+                    document.getElementById("centerDiv").innerHTML = "";
+                    document.getElementById("centerDiv").appendChild(ul);
+                } else {
+                    console.error('请求失败');
+                }
+            };
+
+            // 监听 XMLHttpRequest 的错误事件
+            xhr.onerror = function () {
+                console.error('请求出错');
+            };
+
+            // 发送请求
+            xhr.send();
+        }
+
+        //获取单曲详情
+        function detailPalyMusic(index, keyWord) {
+            var num = index;
+            var searchName = keyWord;
+            // 创建一个新的 XMLHttpRequest 对象
+            var xhr = new XMLHttpRequest();
+
+            // 设置请求的方法和 URL
+            xhr.open('GET', 'https://api.xingzhige.com/API/Kugou_GN_new/?page=' + page + '&pagesize=' + pagesize + '&br=' + br + '&n=' + num + '&name=' + searchName, true);
+
+            // 监听 XMLHttpRequest 的加载事件
+            xhr.onload = function () {
+                // 检查请求是否成功
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    // 解析 JSON 响应
+                    var responseData = JSON.parse(xhr.responseText);
+
+                    // 处理解析后的数据
+                    //console.log(responseData); // 打印解析后的数据
+                    // 这里可以对 responseData 进行进一步处理，比如将数据显示在页面上
+                    var src = responseData.data.src;
+                    // 获取 audio 元素的引用
+                    var audio = document.getElementById("bottomSpinner");
+                    // 设置 audio 的 src 属性
+                    audio.src = src;
+                } else {
+                    console.error('请求失败');
+                }
+            };
+
+            // 监听 XMLHttpRequest 的错误事件
+            xhr.onerror = function () {
+                console.error('请求出错');
+            };
+
+            // 发送请求
+            xhr.send();
+
+        }
+
+        //上一页
+        function lastPage() {
+            page = page - 1;
+            if (page <= 0) {
+                return;
+            }
+            // 获取具有特定 ID 的输入框元素
+            var inputElement = document.getElementById("keyWord");
+            // 获取输入框的值
+            var keywordValue = inputElement.value;
+            GetMusicList(keywordValue);
+        }
+
+        //下一页
+        function nextPage() {
+            page = page + 1;
+            // 获取具有特定 ID 的输入框元素
+            var inputElement = document.getElementById("keyWord");
+            // 获取输入框的值
+            var keywordValue = inputElement.value;
+            GetMusicList(keywordValue);
+        }
+    </script>
+</head>
+<body>
+    <!-- 音乐搜索 -->
+    <div style="display: flex;">
+        <input type="text" id="keyWord" />
+        <div class="searchBtn" onclick="search()">搜索</div>
+    </div>
+    <!--上一页/下一页-->
+    <div style="float:right">
+        <span onclick="lastPage()"><img src="https://img2.imgtp.com/2024/03/25/P1KFmlJV.png" style="width:45px;height:30px;" /></span>
+        <span onclick="nextPage()"><img src="https://img2.imgtp.com/2024/03/25/o1ytXYql.png" style="width:45px;height:30px;margin:0px 45px" /></span>
+    </div>
+    <!-- 音乐列表数据 -->
+    <div id="centerDiv">
+    </div>
+    <!-- 播放器位置 -->
+    <div id="bottomDiv">
+        <div id="playLogo">
+            <img src="" id="spinner" />
+        </div>
+        <div id="playAudio">
+            <audio id="bottomSpinner" controls autoplay="autoplay">
+                <source src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+</body>
+</html>
