@@ -4,31 +4,203 @@
     "chapterPath": "http://tvpull.dxhmt.cn/tv/11081-2.m3u8"
   },
   {
-    "title": "CCTV-3",
-    "chapterPath": "http://36.96.38.246:8888/newlive/live/hls/4/live.m3u8"
-  },
-  {
-    "title": "龙华戏剧",
-    "chapterPath": "http://50.7.238.114:8278/lunghuaxiju_twn/playlist.m3u8?tid=MF2F2793524427935244&ct=19249&tsum=db1ef83fbbbae9a364979295fd690f7d"
-  },
-  {
     "title": "浙江少儿",
     "chapterPath": "https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8"
   },
-  {
-    "title": "河南卫视",
-    "chapterPath": "https://live-dtocnc-cdn.ysp.cctv.cn/194DCDD1DC92BE7BBD9AD6FAC5055ABF312D0AFA8D2DB14DD671B250EBFEAC8E75C392ADCEA6CBE0AEA2865A20C94F84704E8F1285E8778F7F0099926D0157865E98BAC2CA5AD4045157EF4F1103AC1A2DA3304D9D2E1B3654890D8011ECBC4069925A84EC17DC0115C0A7382F43A657/2000296102.m3u8?from=player&svrtime=1708060720&pid=600002525&cdn=5505&revoi=147785898FDD841673A1208FD6101E239E0CE2D0EB1EAFA43E1E2F5389CC91F89BFDAE00546FFFFFA0935F787C5CC53C50303C04A0449813E44BAB97A5CEC8CC032378C647C51058B1DC9698F6E218835BE628AB11EACE8A175A6AD57159284BFF3CA110DCA85EB152AD78A303A1F864D3FAA22DC4EA6F26D0FC644E7C77E62EB02F87D7D71712B4BE0429FDF7B498FA3BA2F4ABA6EB0005A2F08A8F2D1CEC6A&app_id=519748109&guid=lso60sp9_0afbrvrsgn4"
-  },
-  {
-    "title": "湖南卫视",
-    "chapterPath": "http://61.54.14.232:9801/tsfile/live/1017_1.m3u8"
-  },
-  {
-    "title": "江苏卫视",
-    "chapterPath": "https://60.205.114.16/live/jsws.m3u8?user=APTV66&line=2"
-  },
    {
-    "title": "CCTV-11",
-    "chapterPath": "https://live.goodiptv.club/api/bestv.php?id=cctv11hd8m/8000000"
-  }
+        "title": "CCTV1: 央视",
+        "chapterPath": "http://mqiptv.com:8014/ch/cctv1/mqlive.m3u8"
+    },
+    {
+        "title": "CCTV2: 财经",
+        "chapterPath": "http://mqiptv.com:8014/ch/cctv2/mqlive.m3u8"
+    },
+    {
+        "title": "CCTV3: 综艺",
+        "chapterPath": "http://mqiptv.com:8014/ch/cctv3/mqlive.m3u8"
+    },
+    {
+        "title": "CCTV4: 国际",
+        "chapterPath": "http://mqiptv.com:8014/ch/cctv4/mqlive.m3u8"
+    },
+    {
+        "title": "CCTV5: 体育",
+        "chapterPath": "http://mqiptv.com:8014/ch/cctv5/mqlive.m3u8"
+    },
+    {
+        "title": "CCTV6: 电影",
+        "chapterPath": "http://mqiptv.com:8014/ch/cctv6/mqlive.m3u8"
+    },
+    {
+        "title": "CCTV7: 军事",
+        "chapterPath": "http://mqiptv.com:8014/ch/cctv7/mqlive.m3u8"
+    },
+    {
+        "title": "CCTV8: 电视剧",
+        "chapterPath": "http://mqiptv.com:8014/ch/cctv8/mqlive.m3u8"
+    },
+    {
+        "title": "CCTV9: 记录",
+        "chapterPath": "http://mqiptv.com:8014/ch/cctv9/mqlive.m3u8"
+    },
+    {
+        "title": "CCTV10: 科教",
+        "chapterPath": "http://mqiptv.com:8014/ch/cctv10/mqlive.m3u8"
+    },
+    {
+        "title": "CCTV11: 戏曲",
+        "chapterPath": "http://mqiptv.com:8014/ch/cctv11/mqlive.m3u8"
+    },
+    {
+        "title": "CCTV12: 社会与法",
+        "chapterPath": "http://mqiptv.com:8014/ch/cctv12/mqlive.m3u8"
+    },
+    {
+        "title": "CCTV13: 新闻",
+        "chapterPath": "http://mqiptv.com:8014/ch/cctv13/mqlive.m3u8"
+    },
+    {
+        "title": "CCTV14: 少儿",
+        "chapterPath": "http://mqiptv.com:8014/ch/cctv14/mqlive.m3u8"
+    },
+    {
+        "title": "CCTV15: 音乐",
+        "chapterPath": "http://mqiptv.com:8014/ch/cctv15/mqlive.m3u8"
+    },
+    {
+        "title": "湖南卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/hunanws/mqlive.m3u8"
+    },
+    {
+        "title": "浙江卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/zjws/mqlive.m3u8"
+    },
+    {
+        "title": "东方卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/dfws/mqlive.m3u8"
+    },
+    {
+        "title": "江苏卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/jsws/mqlive.m3u8"
+    },
+    {
+        "title": "安徽卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/ahws/mqlive.m3u8"
+    },
+    {
+        "title": "重庆卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/cqws/mqlive.m3u8"
+    },
+    {
+        "title": "北京卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/bjws/mqlive.m3u8"
+    },
+    {
+        "title": "天津卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/tjws/mqlive.m3u8"
+    },
+    {
+        "title": "辽宁卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/lnws/mqlive.m3u8"
+    },
+    {
+        "title": "江西卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/jxws/mqlive.m3u8"
+    },
+    {
+        "title": "黑龙江卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/hljws/mqlive.m3u8"
+    },
+    {
+        "title": "山东卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/sdws/mqlive.m3u8"
+    },
+    {
+        "title": "云南卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/ynws/mqlive.m3u8"
+    },
+    {
+        "title": "四川卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/scws/mqlive.m3u8"
+    },
+    {
+        "title": "河南卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/hnws/mqlive.m3u8"
+    },
+    {
+        "title": "广东卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/gdws/mqlive.m3u8"
+    },
+    {
+        "title": "深圳卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/szws/mqlive.m3u8"
+    },
+    {
+        "title": "湖北卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/hbws/mqlive.m3u8"
+    },
+    {
+        "title": "东南卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/dnws/mqlive.m3u8"
+    },
+    {
+        "title": "厦门卫视",
+        "chapterPath": "https://iptv.luas.edu.cn/liverespath/151ef24b315bb7709d1a2f7a35d260932c6e9eb5/5c5bb21675-0-0-801ffebe6fb4a4e6c1274a991f5ba12f/index.m3u8"
+    },
+    {
+        "title": "贵州卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/gzws/mqlive.m3u8"
+    },
+    {
+        "title": "河北卫视",
+        "chapterPath": "http://hls.live.cqccn.com/__cl/cg:live/__c/hebeiSD/__op/default/__f/index.m3u8"
+    },
+    {
+        "title": "吉林卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/jlws/mqlive.m3u8"
+    },
+    {
+        "title": "广西卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/gxws/mqlive.m3u8"
+    },
+    {
+        "title": "青海卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/qhws/mqlive.m3u8"
+    },
+    {
+        "title": "山西卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/sxws/mqlive.m3u8"
+    },
+    {
+        "title": "陕西卫视",
+        "chapterPath": "https://iptv.luas.edu.cn/liverespath/ebc9ec3e297c071df95d759b6313b9d9dbc3dbda/ef6e859417-0-0-62a8314666ead4b1cf49536375036d60/index.m3u8"
+    },
+    {
+        "title": "内蒙古卫视",
+        "chapterPath": "https://iptv.luas.edu.cn/liverespath/5a601b122fcaacb6480b65cb74ee8f76347020d6/aae176985f-0-0-f061a231739c0eef9eedd7098db170e9/index.m3u8"
+    },
+    {
+        "title": "宁夏卫视",
+        "chapterPath": "https://iptv.luas.edu.cn/liverespath/eefad27700cf7ea30b4f5145f0b8d466a27c1478/a6521c76fe-0-0-122593a056f92b15e26f5c38aef3be42/index.m3u8"
+    },
+    {
+        "title": "西藏卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/xzws/mqlive.m3u8"
+    },
+    {
+        "title": "新疆卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/xjws/mqlive.m3u8"
+    },
+    {
+        "title": "甘肃卫视",
+        "chapterPath": "http://mqiptv.com:8014/ch/gsws/mqlive.m3u8"
+    },
+    {
+        "title": "海南卫视",
+        "chapterPath": "http://livelyws.chinamcache.com/lyws/zb01.m3u8"
+    },
+    {
+        "title": "三沙卫视",
+        "chapterPath": "http://hls.live.cqccn.com/__cl/cg:live/__c/sanshaSD/__op/default/__f/index.m3u8"
+    }
 ]
