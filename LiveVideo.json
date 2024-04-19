@@ -205,7 +205,7 @@
     }
     ,
     {
-        "title": "广西都市",
-        "chapterPath": "http://180.143.87.172:8181/tsfile/live/2038_1.m3u8?key=txiptv&playlive=1&authid=0"
+        "title": "CCTV4K",
+        "chapterPath": "http://27.222.3.214/liveali-tp4k.cctv.cn/live/4K10M.stream/playlist.m3u8"
     }
 ]
