@@ -13,7 +13,7 @@
     },
     {
         "title": "CCTV2: 财经",
-        "chapterPath": "http://mqiptv.com:8014/ch/cctv2/mqlive.m3u8"
+        "chapterPath": "http://39.134.115.163:8080/PLTV/88888910/224/3221225643/index.m3u8"
     },
     {
         "title": "CCTV3: 综艺",
@@ -202,5 +202,10 @@
     {
         "title": "三沙卫视",
         "chapterPath": "http://hls.live.cqccn.com/__cl/cg:live/__c/sanshaSD/__op/default/__f/index.m3u8"
+    }
+    ,
+    {
+        "title": "广西都市",
+        "chapterPath": "http://180.143.87.172:8181/tsfile/live/2038_1.m3u8?key=txiptv&playlive=1&authid=0"
     }
 ]
