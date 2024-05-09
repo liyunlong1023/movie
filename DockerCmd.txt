@@ -10,10 +10,10 @@ docker 命名规则 [仓库地址（镜像地址）]:[版本号之类的]
 
 
 二、删除镜像
-docker rmi 镜像ID
+docker rmi 镜像ID （[镜像名]:[tag名称]可不写）
 
 三、复制镜像并重命名新镜像
-1.docker tag [原镜像名]:[原标签][[新镜像名1]:[新标签] 
+1.docker tag [原镜像名]:[原标签] [新镜像名1]:[新标签] 
 2.docker tag <image_id> <repo>:<tag>
 
 四、创建镜像
