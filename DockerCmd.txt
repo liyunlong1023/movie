@@ -10,3 +10,6 @@ docker rmi 镜像ID
 
 四、创建镜像
 docker build -t [镜像名]:[tag名称] 文件路径
+
+五、启动镜像
+docker run 镜像名称
