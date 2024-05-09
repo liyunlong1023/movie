@@ -1,3 +1,6 @@
+docker 命名规则 [仓库地址（镜像地址）]:[版本号之类的]
+
+
 一、查看镜像
 1.docker images
 2.docker image ls
