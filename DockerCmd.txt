@@ -26,3 +26,36 @@ docker build -t [镜像名]:[tag名称] 文件路径
 五、启动镜像
 docker run 镜像名称
 
+# 查看当前所有正在运行的容器
+docker ps
+# 查看当前所有的容器
+docker ps -a
+# 使用过滤器(除了name外,常用的还可以指定id:id= 、所有停止的容器:status=exited,正在运行的容器:status=running 等)
+docker ps -f name=指定的名字
+# 显示2个上次创建的容器(2可以改变)
+docker ps -n 2
+# 显示最新创建的容器（包括所有状态）
+docker ps -l
+# 仅显示ip
+docker ps -q
+ # 显示容器大小
+docker ps -s
+
+# 停止容器
+docker container stop 容器名或容器id
+# 或可简写为
+docker stop 容器名或容器id
+
+# 强制关闭容器
+docker container kill 容器名或容器id
+# 或可简写为
+docker kill 容器名或容器id
+
+# 启动容器
+docker container start 容器名或容器id
+# 或可简写为
+docker start 容器名或容器id
+#查看网络
+docker network ls
+#指定端口运行启动镜像
+docker run -p 宿主端口:镜像端口  例如：docker run -p 8081:80  要访问的话，就是127.0.0.1:8081
