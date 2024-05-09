@@ -7,3 +7,6 @@ docker rmi 镜像ID
 
 三、重命名镜像
 1.docker tag [原镜像名]:[原标签][[新镜像名1]:[新标签]
+
+四、创建镜像
+docker build -t [镜像名]:[tag名称] 文件路径
