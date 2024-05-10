@@ -60,3 +60,7 @@ docker container start 容器名或容器id
 docker start 容器名或容器id
 #查看网络
 docker network ls
+#将指定镜像打包成为tar文件
+docker save 镜像名称 > 新文件.tar
+#将指定tar文件还原成镜像
+docker load < 文件名称.tar
