@@ -1,5 +1,5 @@
 我的收藏,#genre#
-中央11高清,http://111.225.114.93:808/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0
+中央11高清,http://123.160.174.231:85/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0
 
 
 动画,#genre#
@@ -50,16 +50,6 @@ CCTV15-音乐,http://123.160.174.231:85/tsfile/live/0015_1.m3u8?key=txiptv&playl
 新疆卫视,http://171.8.75.132:8011/tsfile/live/0110_1.m3u8?key=txiptv&playlive=0&authid=0
 西藏卫视,http://171.8.75.132:8011/tsfile/live/0111_1.m3u8?key=txiptv&playlive=0&authid=0
 
-
-省内,#genre#
-都市频道,http://123.160.174.231:85/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0
-民生频道,http://123.160.174.231:85/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0
-法制频道,http://123.160.174.231:85/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0
-新闻频道,http://123.160.174.231:85/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0
-公共频道,http://123.160.174.231:85/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0
-梨园频道,http://123.160.174.231:85/tsfile/live/1006_1.m3u8?key=txiptv&playlive=1&authid=0
-推荐,#genre#
-移动戏曲,http://123.160.174.231:85/tsfile/live/1005_1.m3u8?key=txiptv&playlive=1&authid=0
 
 少儿,#genre#
 少儿动画,http://114.254.92.42:88/tsfile/live/1006_1.m3u8?key=txiptv&playlive=1&authid=0
