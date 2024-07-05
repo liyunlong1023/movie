@@ -53,5 +53,6 @@ CCTV15-音乐,http://123.160.174.231:85/tsfile/live/0015_1.m3u8?key=txiptv&playl
 
 少儿,#genre#
 少儿动画,http://114.254.92.42:88/tsfile/live/1006_1.m3u8?key=txiptv&playlive=1&authid=0
-金鹰卡通,http://114.254.92.42:88/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0
+金鹰卡通,http://111.225.114.93:808/tsfile/live/1027_1.m3u8?key=txiptv&playlive=1&authid=0
+
 
